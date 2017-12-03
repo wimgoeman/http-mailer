@@ -2,10 +2,10 @@ const express = require('express');
 const {initTransport} = require('./transport');
 
 
-let path = process.env.MAILER_SETTINGS_PATH;
-let username = process.env.MAILER_USERNAME;
-let password = process.env.MAILER_PASSWORD;
-let authEnabled = process.env.MAILER_AUTH;
+let path = process.env.MAILER_SETTINGS_PATH || '';
+let username = process.env.MAILER_USERNAME || '';
+let password = process.env.MAILER_PASSWORD || '';
+let authEnabled = process.env.MAILER_AUTH || 'false';
 authEnabled = authEnabled.toUpperCase() === 'TRUE';
 console.log(`=== http-mailer starting ===`);
 console.log(`Settings path: ${path}`);

@@ -19,8 +19,9 @@ This tool is designed to be used with docker. The only thing needed is to start 
 * MAILER_PASSWORD: password (only when auth is enabled) 
 * MAILER_SETTINGS_PATH: Path to json file with nodemailer format transport config. See examples/sample-config.json 
 
-docker run -d -p 8025:8025 -e MAILER_AUTH=false -e MAILER_SETTINGS_PATH=config.json wimgoeman/http-mailer
-
+```
+docker run -d -e MAILER_USERNAME=username -e MAILER_PASSWORD=password -e MAILER_SETTINGS_PATH=/config/sample-config.json -e MAILER_AUTH=true -p 8025:8025 -v `pwd`/examples:/config wimgoeman/http-mailer
+```
 ## Example usage
 
 ### Cron
