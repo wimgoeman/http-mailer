@@ -1,0 +1,29 @@
+{
+  "name": "http-mailer",
+  "version": "1.0.0",
+  "description": "Expose a mail service over an HTTP REST API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wimgoeman/http-mailer.git"
+  },
+  "keywords": [
+    "smtp",
+    "http",
+    "rest",
+    "nodemailer"
+  ],
+  "author": "Wim Goeman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wimgoeman/http-mailer/issues"
+  },
+  "homepage": "https://github.com/wimgoeman/http-mailer#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemailer": "^4.4.0"
+  }
+}

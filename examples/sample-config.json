@@ -1,0 +1,5 @@
+{
+    "host": "smtp-relay.gmail.com",
+    "port": 25,
+    "secure": false
+}
